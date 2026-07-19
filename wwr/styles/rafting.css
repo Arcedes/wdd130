@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
+    background-color: var(--accent2-color);
 }
 
 header,
@@ -61,6 +61,12 @@ header nav ul {
 
 header nav a {
     color: var(--primary-color);
+}
+
+header nav a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* Hero area */
@@ -144,7 +150,7 @@ footer {
 
     margin-top: 20px;
     padding: 12px 0;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid var(--secondary-color);
 }
 
 footer p {
