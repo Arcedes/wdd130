@@ -1,24 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-background-color: goldenrod;
+    --nav-link-color: white;
+    --heading-color: darkslateblue;
+
+    --image-width: 150px;
+    --image-height: auto;
+    --image-border: 1px solid black;
+    --image-padding: 2px;
+    --image-shadow: 0 0 30px gray;
+
+    --text-alignment: center;
+    --aside-background-color: #eee;
+    --aside-text-color: #333;
+    --light-border-color: rgb(0 0 0 / 20%);
+    --dark-border-color: #000;
+}
+
 nav {
-    background-color: goldenrod;
+    background-color: var(--nav-background-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkslateblue;
+    color: var(--heading-color);
 }
 
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    width: var(--image-width);
+    height: var(--image-height);
+    border: var(--image-border);
+    padding: var(--image-padding);
+    box-shadow: var(--image-shadow);
 }
 
 p {
@@ -29,34 +53,42 @@ main {
     max-width: 840px;
 }
 
+main img {
+    float: right;
+}
+
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    text-align: var(--text-alignment);
+    position: relative;
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--image-height);
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    border-top: 1px solid var(--dark-border-color);
+    text-align: var(--text-alignment);
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+/* Configuration for index page */
 
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid var(--light-border-color);
+    padding: 1rem;
+    background-color: var(--aside-background-color);
+    color: var(--aside-text-color);
 }
-
-/*  Configuration for index page */
