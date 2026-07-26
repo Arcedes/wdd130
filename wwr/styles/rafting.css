@@ -78,7 +78,7 @@ header nav li {
 
 header nav a {
     display: block;
-    padding: 0.75rem 1 rem;
+    padding: 0.75rem 1rem;
     border: 1px solid var(--primary-color);
     color: var(--accent1-color);
     background-color: var(--accent2-color);
