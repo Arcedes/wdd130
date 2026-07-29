@@ -229,9 +229,13 @@ header nav a[aria-current="page"] {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: stretch;
     gap: 2rem;
     margin-bottom: 1.5rem;
+}
+
+.map-container {
+    height: 100%;
 }
 
 .map-container iframe {
