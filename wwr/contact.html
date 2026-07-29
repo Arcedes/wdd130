@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -58,9 +58,64 @@
                     <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
 
+                <fieldset>
+                    <legend>What is the purpose of your message?</legend>
+
+                    <label class="radio-option" for="general">
+                        <input type="radio" id="general" name="purpose" value="general-inquiry"
+                          required>
+                        General Inquiry
+                    </label>
+
+                    <label class="radio-option" for="reservation">
+                        <input type="radio" id="reservation" name="purpose"
+                          value="reservation-question">
+                        Reservation Question
+                    </label>
+
+                    <label class="radio-option" for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose"
+                          value="website-suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                      placeholder="Tell us how we can help you." required></textarea>
+                </div>
+
+                <label class="checkbox-option" for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
 
             </form>
         </section>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <figure>
+                <img src="images/employee1.jpg" alt="Portrait of the operations manager">
+                <figcaption>Mrgaret Morgan — Operations Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Portrait of the lead river guide">
+                <figcaption>Jonathan Lee — Lead River Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg"
+                  alt="Portrait of the customer experience specialist">
+                <figcaption>Natalia Rivera — Customer Experience Specialist</figcaption>
+            </figure>
+        </section>
+
     </main>
 
     <footer>

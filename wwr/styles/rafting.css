@@ -38,14 +38,6 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
 /* Header */
 header {
     display: grid;
@@ -152,6 +144,34 @@ header nav a[aria-current="page"] {
     line-height: 1.4;
 }
 
+/* About page: History */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border: 1px solid var(--primary-color);
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.history p {
+    line-height: 1.5;
+}
+
+.history img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+
+}
+
 /* Adventures Section: Five Figures acrros the page */
 .adventures {
     display: grid;
@@ -184,6 +204,145 @@ header nav a[aria-current="page"] {
 .adventures figcaption {
     margin-top: 0.5rem;
     font-size: 0.9rem;
+}
+
+/* Contact pagege heading and company information */
+.contact-heading {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.contact-heading h1 {
+    margin-bottom: 0.75rem;
+}
+
+.contact-heading address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.contact-heading a {
+    color: var(--primary-color);
+}
+
+/* Contact page map and form */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 420px;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.form-item {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.contact-form label,
+.contact-form legend {
+    font-weight: 700;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--primary-color);
+    font: inherit;
+    background-color: var(--accent2-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    display: grid;
+    gap: 0.65rem;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-form legend {
+    padding: 0 0.4rem;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.contact-form button {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--accent1-color);
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background-color: var(--accent1-color);
+}
+
+/* Contact page employees */
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--primary-color);
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+}
+
+.employees figcaption {
+    margin-top: 0.65rem;
+    line-height: 1.4;
 }
 
 /* Footer */
